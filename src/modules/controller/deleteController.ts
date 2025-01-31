@@ -10,6 +10,11 @@ import { DIRECTORIES, ERROR_MESSAGE, EXTENSIONS, PROJECT_STRUCTURE_STYLE } from 
 import { updatePermissions } from '../permission/permissionManagement';
 import path from 'path';
 
+  /**
+   * Deletes a controller configuration, given a RenderContext for the configuration.
+   * @param context - The RenderContext for the controller configuration.
+   * @throws {Error} If the controller file or controller file configuration is not found.
+   */
 export const deleteControllerConfig = async (context: RenderContext<ControllerConfig>) => {
 
   let controllerPath;
