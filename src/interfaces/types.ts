@@ -25,6 +25,17 @@ export interface ApiConfig extends BaseApiConfig {
   packageName: string;
 }
 
+/**
+ * Base Api Config that contains all the basic API information required to generate the API structure and files
+ * @type {BaseApiConfig}
+ * @export 
+ * @interface BaseApiConfig 
+ * @property {string} type - The type of the API.
+ * @property {string} apiName - The name of the API.  
+ * @property {string} group - The group of the API.
+ * @property {string} artifact - The artifact of the API.
+ * @property {string} database - The database of the API.
+ */
 export interface BaseApiConfig {
   type: 'springboot';
   apiName: string;
